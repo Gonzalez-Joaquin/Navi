@@ -1,5 +1,12 @@
 const App = () => {
-  return <main>Ina, página en construcción.</main>
+  return (
+    <main>
+      <div>
+        <h1>Ina, página en construcción.</h1>
+        <p>una página que promete</p>
+      </div>
+    </main>
+  )
 }
 
 export default App
