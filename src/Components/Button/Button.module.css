@@ -1,0 +1,60 @@
+.button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--color-white);
+  background: var(--color-terciario);
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 0.2s;
+}
+
+.button:hover {
+  background: var(--color-secundario);
+}
+
+.button:active {
+  background: var(--color-primario);
+}
+
+.unfilled {
+  color: var(--color-primario);
+  background: 0;
+}
+
+.unfilled:hover {
+  background: 0;
+  color: var(--color-secundario);
+}
+
+.unfilled:active {
+  color: var(--color-terciario);
+}
+
+.large {
+  font: normal 400 18px/132% 'Poppins';
+  padding: 12px 22px;
+}
+
+.medium {
+  font: normal 400 16px/148% 'Poppins';
+  padding: 8px 18px;
+}
+
+.small {
+  font: normal 400 14px/140% 'Poppins';
+  padding: 4px 12px;
+}
+
+.button:disabled {
+  color: white;
+  background: var(--color-disabled);
+}
+
+.unfilled:disabled {
+  color: var(--color-disabled);
+  background: 0;
+}
