@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.small .input {
+  padding: 12px 8px;
+}
+
+.label {
+  font: normal 400 16px/148% 'Poppins';
+  color: #1a141f;
+  cursor: pointer;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input {
+  outline: 0;
+  padding: 12px 8px;
+  border-radius: 2px;
+  background: white;
+  color: var(--color-hint-text);
+  caret-color: var(--color-terciario);
+  font: normal 500 14px/16px 'Poppins';
+  border: 1px solid var(--color-spacer-light);
+  transition: ease-out 0.2s;
+}
+
+.textarea {
+  outline: 0;
+  padding: 12px 8px;
+  border-radius: 2px;
+  background: white;
+  color: var(--color-hint-text);
+  caret-color: var(--color-terciario);
+  font: normal 500 14px/16px 'Poppins';
+  border: 1px solid var(--color-spacer-light);
+  resize: none;
+  transition: ease-out 0.2s;
+}
+
+.input:is(:active, :focus, :hover),
+.textarea:is(:active, :focus, :hover) {
+  border-color: var(--color-terciario);
+}
+
+.input-error,
+.input-error:is(:active, :focus, :hover) {
+  border-color: var(--color-error);
+}
+
+.errors-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.error {
+  font: normal 400 12px/15px 'Poppins';
+  color: var(--color-error);
+}
+
+.counter {
+  margin-left: auto;
+  font: normal 400 12px/15px 'Poppins';
+}
+
+.counter > span {
+  font: normal 400 12px/15px 'Poppins';
+}
+
+.input::placeholder {
+  font: normal 500 14px/1.4 'Poppins';
+  color: var(--color-spacer-light);
+}
+
+.input-icon {
+  padding-right: 32px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--color-spacer);
+}
+
+.input:disabled,
+.textarea:disabled {
+  background: var(--color-disabled);
+  border: var(--color-spacer-light);
+  color: var(--color-border);
+}
+
+@media (min-width: 925px) {
+  .input {
+    padding: 12px;
+  }
+
+  .textarea {
+    padding: 12px;
+  }
+
+  .icon {
+    width: 40px;
+  }
+
+  .input-icon {
+    padding-right: 40px;
+  }
+}
