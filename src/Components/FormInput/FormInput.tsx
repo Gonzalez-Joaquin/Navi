@@ -83,7 +83,7 @@ const FormInput = ({
         {valueLenght && limit ? (
           valueLenght > limit - 5 ? (
             <p className={styles.counter}>
-              <span className={valueLenght > limit - 3 ? styles.error : ''}>{valueLenght}</span>/{limit}
+              <span className={valueLenght > limit - 2 ? styles.error : ''}>{valueLenght}</span>/{limit}
             </p>
           ) : null
         ) : null}

@@ -1,30 +1,67 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { Button, FormInput } from '../../Components'
 import logo from '../../Assets/ina.png'
 import styles from './Login.module.css'
 
 const Login = () => {
+  const [passwordError, setPasswordError] = useState<string | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
+  const [password, setPassword] = useState<string>('')
+  const [email, setEmail] = useState<string>('')
+
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+
+    // Validación de la contraseña
+    if (password.length > 6) {
+      setPasswordError('La contraseña debe tener menos de 6 caracteres.')
+      return
+    } else {
+      setPasswordError(null)
+    }
+
+    setLoading(!loading)
+  }
+
+  useEffect(() => {
+    if (loading) {
+      console.log('Iniciando sesión...')
+    }
+  }, [loading])
 
   return (
     <section className={styles.container}>
       <div className={styles.overlay}>
         <div className={styles['form-container']}>
-          <form
-            onSubmit={e => {
-              e.preventDefault()
-              setLoading(!loading)
-            }}>
+          <form onSubmit={onSubmit}>
             <h3>Iniciar sesión</h3>
             <div className={styles['form-field']}>
-              <FormInput type="email" name="login-email" label="Correo" icon="message" />
+              <FormInput
+                type="email"
+                name="login-email"
+                label="Correo"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                icon={
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z"
+                      fill="#ABA7AF"
+                    />
+                  </svg>
+                }
+              />
             </div>
             <div className={styles['form-field']}>
               <FormInput
                 type="password"
                 name="login-email"
                 label="Contraseña"
+                value={password}
+                error={passwordError}
+                onChange={e => setPassword(e.target.value)}
+                limit={6}
                 icon={
                   <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

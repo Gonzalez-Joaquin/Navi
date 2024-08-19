@@ -55,8 +55,16 @@
 }
 
 .errors-container {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.have-limit {
+  min-height: 15px;
 }
 
 .error {
