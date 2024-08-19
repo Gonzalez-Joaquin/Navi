@@ -205,38 +205,6 @@ section {
   min-height: 100vh;
 }
 
-.main-layout nav {
-  max-width: 225px;
-  width: 100%;
-  height: 100%;
-  padding: 1rem 2rem;
-}
-
-.main-layout ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-.main-layout nav > ul > li {
-  padding: 0.5rem 1rem;
-  font: normal 500 16px/18px 'Poppins';
-}
-
-.main-layout > nav > ul > li > a {
-  text-decoration: none;
-  transition: ease-out 0.2s;
-}
-
-.nav-inactive {
-  color: var(--color-hint-text);
-}
-
-.nav-active {
-  color: var(--color-purple);
-}
-
 .fi {
   line-height: 0 !important;
 }

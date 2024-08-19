@@ -1,8 +1,10 @@
+import Loader from '../Loader/Loader'
 import styles from './Button.module.css'
 
 interface Props {
   value: string
   icon?: string
+  loading?: boolean
   unfilled?: boolean
   leftIcon?: boolean
   className?: string
@@ -18,6 +20,7 @@ const Button = ({
   style,
   value,
   onClick,
+  loading,
   className,
   unfilled = false,
   size = 'medium',
@@ -32,6 +35,7 @@ const Button = ({
       disabled={disabled}
       style={{ ...style }}
       className={`${styles.button} ${unfilled ? styles.unfilled : ''} ${styles[size]} ${className}`}>
+      {loading ? <Loader color="dark" /> : null}
       {!leftIcon && icon ? <i className={`fi fi-br-${icon}`} /> : null}
       {value || null}
       {leftIcon && icon ? <i className={`fi fi-br-${icon}`} /> : null}

@@ -2,10 +2,10 @@ import { useMemo } from 'react'
 import styles from './FormInput.module.css'
 
 interface Props {
-  id: string
   name: string
+  id?: string
   label?: string
-  icon?: string
+  icon?: string | JSX.Element
   limit?: number
   value?: string
   small?: boolean
@@ -30,8 +30,8 @@ const FormInput = ({
   className,
   placeholder,
   error = null,
-  small = false,
   type = 'text',
+  small = false,
   disabled = false,
 }: Props) => {
   const valueLenght = useMemo((): number | undefined => {
@@ -42,14 +42,15 @@ const FormInput = ({
 
   return (
     <div className={`${styles.container} ${small ? styles.small : ''}`}>
-      <label htmlFor={id} className={styles.label}>
+      <label htmlFor={id || name} className={styles.label}>
         {label ? label : null}
       </label>
       <div className={styles['input-container']}>
         {type !== 'textarea' ? (
           <input
-            id={id}
             name={name}
+            type={type}
+            id={id || name}
             style={{ ...style }}
             onChange={onChange}
             disabled={disabled}
@@ -69,7 +70,13 @@ const FormInput = ({
             className={`${styles.textarea} ${className} ${error ? styles['input-error'] : ''}`}
           />
         )}
-        {type !== 'textarea' && icon ? <i className={`fi fi-br-${icon} ${styles.icon}`} /> : null}
+        {type !== 'textarea' && icon ? (
+          typeof icon === 'string' ? (
+            <i className={`fi fi-br-${icon} ${styles.icon}`} />
+          ) : (
+            <div className={styles.icon}>{icon}</div>
+          )
+        ) : null}
       </div>
       <div className={styles['errors-container']}>
         {error && <span className={styles.error}>{error}</span>}{' '}

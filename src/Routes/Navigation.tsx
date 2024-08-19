@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import { Routes, Route, NavLink, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { routes } from './routes'
 
 const Navigation = () => {
@@ -8,6 +8,7 @@ const Navigation = () => {
     <Suspense fallback={<span>Loading...</span>}>
       <BrowserRouter>
         <div className="main-layout">
+          {/* 
           <nav>
             <ul>
               {routes.map(({ path, name }) => (
@@ -18,7 +19,8 @@ const Navigation = () => {
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav> 
+          */}
 
           <Routes>
             {routes.map(({ path, Component }) => (
