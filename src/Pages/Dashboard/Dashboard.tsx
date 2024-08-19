@@ -1,9 +1,12 @@
+import { RecentAccesses } from './Layout'
+
 import styles from './Dashboard.module.css'
 
 const Dashboard = () => {
   return (
     <section>
-      Dashboard
+      <h2>Dashboard</h2>
+      <RecentAccesses />
     </section>
   )
 }
