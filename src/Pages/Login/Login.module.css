@@ -15,7 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: 50px 50px 100px 320px;
-  background-image: url('../../../public/bg01.jpeg');
+  background-image: url('./bg01.jpeg');
 }
 
 .overlay::before {

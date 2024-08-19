@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import { Button, FormInput } from '../../Components'
@@ -10,10 +11,11 @@ const Login = () => {
   const [password, setPassword] = useState<string>('')
   const [email, setEmail] = useState<string>('')
 
+  const navigate = useNavigate()
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    // Validación de la contraseña
     if (password.length > 6) {
       setPasswordError('La contraseña debe tener menos de 6 caracteres.')
       return
@@ -26,7 +28,11 @@ const Login = () => {
 
   useEffect(() => {
     if (loading) {
-      console.log('Iniciando sesión...')
+      const timer = setTimeout(() => {
+        navigate('/dashboard')
+      }, 3000)
+
+      return () => clearTimeout(timer)
     }
   }, [loading])
 
