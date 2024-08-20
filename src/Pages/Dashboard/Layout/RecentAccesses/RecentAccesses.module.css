@@ -1,0 +1,15 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.article > h3 {
+  color: var(--color-hint-text);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}

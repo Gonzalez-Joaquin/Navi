@@ -92,7 +92,7 @@ textarea {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #7979799e;
+  background-color: var(--color-spacer-light);
   border-radius: 50px;
   border: 0px solid var(--color-spacer-light);
 }
