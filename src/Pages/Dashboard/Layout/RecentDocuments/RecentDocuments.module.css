@@ -1,0 +1,29 @@
+.table {
+  min-height: unset;
+}
+
+.user {
+  width: 53%;
+}
+
+.user > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.type {
+  width: 17%;
+}
+
+.access {
+  width: 15%;
+}
+
+.status {
+  width: 15%;
+}
+
+.status > div {
+  display: flex;
+  justify-content: flex-start;
+}

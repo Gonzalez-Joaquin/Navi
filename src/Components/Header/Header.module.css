@@ -1,0 +1,21 @@
+.header {
+  padding-inline: 2rem;
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-spacer-light);
+}
+
+.header > h2 {
+  color: var(--color-hint-text);
+}
+
+.container {
+  height: 100%;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

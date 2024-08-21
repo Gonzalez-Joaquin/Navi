@@ -1,0 +1,40 @@
+.cell {
+  height: 100%;
+}
+
+.cell > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cell > div > button {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  background: #f6f8fe;
+  color: #5f6388;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  transition: ease-out 0.2s;
+}
+
+.cell > div > button > svg > path {
+  transition: ease-out 0.2s;
+}
+
+.cell > div > button:is(:hover, :active) {
+  background: var(--ba-primary-light);
+}
+
+.cell > div > button:is(:hover, :active) svg path {
+  fill: var(--ba-primary-color);
+}
+
+.cell > div > .trash:is(:hover, :active) svg path {
+  fill: var(--ba-error);
+}

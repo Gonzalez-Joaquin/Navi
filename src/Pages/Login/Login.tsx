@@ -16,7 +16,7 @@ const Login = () => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    if (password.length > 6) {
+    if (password.length > 26) {
       setPasswordError('La contraseña debe tener menos de 6 caracteres.')
       return
     } else {
@@ -67,7 +67,7 @@ const Login = () => {
                 value={password}
                 error={passwordError}
                 onChange={e => setPassword(e.target.value)}
-                limit={6}
+                limit={26}
                 icon={
                   <svg width="18" height="9" viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -79,7 +79,7 @@ const Login = () => {
               />
             </div>
             <div className={styles['form-footer']}>
-              <Button loading={loading} value="Entrar" type="submit" />
+              <Button loading={loading} value={loading ? 'Ingresando' : 'Ingresar'} type="submit" />
             </div>
           </form>
         </div>

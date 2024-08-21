@@ -1,0 +1,13 @@
+.head {
+  width: 100%;
+}
+
+.head > tr {
+  height: 2.5rem;
+}
+
+.head > tr > td {
+  font: normal 600 16px/19px 'Poppins';
+  color: var(--color-hint-text);
+  text-transform: capitalize;
+}

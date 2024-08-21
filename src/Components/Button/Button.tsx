@@ -2,8 +2,8 @@ import Loader from '../Loader/Loader'
 import styles from './Button.module.css'
 
 interface Props {
-  value: string
-  icon?: string
+  value?: string
+  icon?: string | JSX.Element
   loading?: boolean
   unfilled?: boolean
   leftIcon?: boolean
@@ -36,9 +36,21 @@ const Button = ({
       style={{ ...style }}
       className={`${styles.button} ${unfilled ? styles.unfilled : ''} ${styles[size]} ${className}`}>
       {loading ? <Loader color="dark" /> : null}
-      {!leftIcon && icon ? <i className={`fi fi-br-${icon}`} /> : null}
+      {!leftIcon && icon ? (
+        typeof icon === 'string' ? (
+          <i className={`fi fi-br-${icon} ${styles.icon}`} />
+        ) : (
+          <div className={styles['svg-icon-div']}>{icon}</div>
+        )
+      ) : null}
       {value || null}
-      {leftIcon && icon ? <i className={`fi fi-br-${icon}`} /> : null}
+      {leftIcon && icon ? (
+        typeof icon === 'string' ? (
+          <i className={`fi fi-br-${icon} ${styles.icon}`} />
+        ) : (
+          <div className={styles['svg-icon-div']}>{icon}</div>
+        )
+      ) : null}
     </button>
   )
 }

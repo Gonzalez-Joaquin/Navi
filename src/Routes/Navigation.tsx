@@ -1,27 +1,16 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Suspense } from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import { Routes, Route, Navigate } from 'react-router-dom'
+
+import { Header, Loader } from '../Components'
 import { routes } from './routes'
 
 const Navigation = () => {
   return (
-    <Suspense fallback={<span>Loading...</span>}>
+    <Suspense fallback={<Loader />}>
       <BrowserRouter>
+        <Header title="Dashboard" />
         <div className="main-layout">
-          {/* 
-          <nav>
-            <ul>
-              {routes.map(({ path, name }) => (
-                <li key={path}>
-                  <NavLink to={path} className={({ isActive }) => (isActive ? 'nav-active' : 'nav-inactive')}>
-                    {name}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </nav> 
-          */}
-
+          {/* <NavBar /> */}
           <Routes>
             {routes.map(({ path, Component }) => (
               <Route key={path} path={path} element={<Component />} />

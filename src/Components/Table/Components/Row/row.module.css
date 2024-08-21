@@ -1,0 +1,54 @@
+.row {
+  width: 100%;
+  border-bottom: 1px solid var(--color-bg-light-grey);
+  padding: 0.5rem 1.3rem 0.5rem 2rem;
+}
+
+.container {
+  padding-inline: 2.31rem 0;
+  max-width: 30px;
+}
+
+.container > button {
+  width: 21px;
+  height: 21px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+.arrowContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.arrowContainer > button {
+  width: 21px;
+  height: 21px;
+  background: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.arrowContainer > button > svg {
+  rotate: -90deg;
+}
+
+.arrowContainer > button svg path {
+  transition: ease 0.3s;
+}
+
+.arrowContainer > button:is(:hover, :active) svg path {
+  fill: var(--color-terciario);
+}
+
+.withoutArrow {
+  max-width: 50px;
+  width: 5%;
+}

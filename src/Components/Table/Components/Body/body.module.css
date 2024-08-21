@@ -1,0 +1,13 @@
+.body > tr {
+  height: 4rem;
+  transition: ease 0.1s;
+}
+
+.body > tr:hover {
+  cursor: pointer;
+  background: var(--color-bg-light-grey);
+}
+
+.body > tr:nth-last-child(1) {
+  border-bottom: unset;
+}

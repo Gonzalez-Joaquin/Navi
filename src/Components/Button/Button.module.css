@@ -36,17 +36,17 @@
 }
 
 .large {
-  font: normal 400 18px/132% 'Poppins';
+  font: normal 500 18px/132% 'Poppins';
   padding: 12px 22px;
 }
 
 .medium {
-  font: normal 400 16px/148% 'Poppins';
+  font: normal 500 16px/148% 'Poppins';
   padding: 8px 14px;
 }
 
 .small {
-  font: normal 400 14px/140% 'Poppins';
+  font: normal 500 14px/140% 'Poppins';
   padding: 4px 12px;
 }
 
@@ -58,4 +58,11 @@
 .unfilled:disabled {
   color: var(--color-disabled);
   background: 0;
+}
+
+.svg-icon-div {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
 }
