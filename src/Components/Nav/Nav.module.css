@@ -1,0 +1,7 @@
+.nav {
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid var(--color-spacer-light);
+  background-color: var(--color-white);
+  transition: width 0.3s ease-in-out;
+}

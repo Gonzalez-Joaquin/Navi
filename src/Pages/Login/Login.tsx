@@ -62,7 +62,7 @@ const Login = () => {
             <div className={styles['form-field']}>
               <FormInput
                 type="password"
-                name="login-email"
+                name="login-password"
                 label="Contraseña"
                 value={password}
                 error={passwordError}

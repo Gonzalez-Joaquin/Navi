@@ -1,0 +1,54 @@
+.nav-item {
+  position: relative;
+  width: 100%;
+  padding: 12px 0px 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  text-decoration: none;
+  transition: ease 0.2s;
+}
+
+.nav-item::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  transition: ease 0.2s;
+}
+
+.active {
+  background: var(--color-bg-light-grey);
+}
+
+.active::before {
+  background: var(--color-terciario);
+}
+
+.nav-item > span {
+  font: normal 500 16px/132% 'Poppins';
+  color: var(--color-hint-text);
+  transition: ease 0.3s;
+}
+
+.active > span {
+  color: var(--color-terciario);
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+}
+
+.icon-svg > svg > path {
+  fill: var(--color-spacer);
+}
+
+.active > .icon-svg > svg > path {
+  fill: var(--color-terciario);
+}
