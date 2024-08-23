@@ -11,17 +11,22 @@ const UsersTableColumns: Pick<TableHeadProps, 'columns'> = {
     {
       className: styles.type,
       align: 'start',
-      name: 'Clasificación',
+      name: 'Rol',
     },
     {
       className: styles.access,
-      name: 'Vencimiento',
+      name: 'Documentos',
       align: 'start',
     },
     {
       className: styles.status,
-      name: 'Estado',
-      align: 'center',
+      name: 'Ultima vez activo',
+      align: 'start',
+    },
+    {
+      className: styles.status,
+      name: 'Fecha de creación',
+      align: 'start',
     },
   ],
 }

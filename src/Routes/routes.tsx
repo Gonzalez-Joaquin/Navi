@@ -11,9 +11,10 @@ interface Route {
   name: string
   icon?: string | JSX.Element
   desc?: string
+  roles?: Array<string>
 }
 
-export const routes: Route[] = [
+export const routes: Array<Route> = [
   {
     path: '/login',
     Component: LoginPage,
@@ -31,6 +32,7 @@ export const routes: Route[] = [
         />
       </svg>
     ),
+    roles: ['admin'],
   },
   {
     path: '/users',
@@ -45,6 +47,7 @@ export const routes: Route[] = [
         />
       </svg>
     ),
+    roles: ['admin'],
   },
   {
     path: '/files',
@@ -75,5 +78,6 @@ export const routes: Route[] = [
         />
       </svg>
     ),
+    roles: ['admin', 'shipowner'],
   },
 ]
