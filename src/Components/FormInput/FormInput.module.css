@@ -25,7 +25,7 @@
   border-radius: 2px;
   background: white;
   color: var(--color-hint-text);
-  caret-color: var(--color-terciario);
+  caret-color: var(--color-secundario);
   font: normal 500 14px/16px 'Poppins';
   border: 1px solid var(--color-spacer-light);
   transition: ease-out 0.2s;
@@ -37,7 +37,7 @@
   border-radius: 2px;
   background: white;
   color: var(--color-hint-text);
-  caret-color: var(--color-terciario);
+  caret-color: var(--color-secundario);
   font: normal 500 14px/16px 'Poppins';
   border: 1px solid var(--color-spacer-light);
   resize: none;
@@ -46,7 +46,7 @@
 
 .input:is(:active, :focus, :hover),
 .textarea:is(:active, :focus, :hover) {
-  border-color: var(--color-terciario);
+  border-color: var(--color-secundario);
 }
 
 .input-error,

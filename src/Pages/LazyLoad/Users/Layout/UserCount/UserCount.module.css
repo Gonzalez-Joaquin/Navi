@@ -1,6 +1,5 @@
-.section {
+.article {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }

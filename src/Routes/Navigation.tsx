@@ -9,13 +9,13 @@ const Navigation = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        {routes.map(({ path, Component }) => (
+        {routes.map(({ path, Component, name, desc }) => (
           <Route
             key={path}
             path={path}
             element={
               <div className={'page'}>
-                {path !== '/login' && <Header title="Dashboard" />}
+                {path !== '/login' && <Header title={name} desc={desc} />}
                 <main className="main-layout">
                   <Suspense fallback={<Loader />}>
                     <Component />

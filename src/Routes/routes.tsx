@@ -10,6 +10,7 @@ interface Route {
   Component: LazyExoticComponent<JSXComponent> | JSXComponent
   name: string
   icon?: string | JSX.Element
+  desc?: string
 }
 
 export const routes: Route[] = [
@@ -35,6 +36,7 @@ export const routes: Route[] = [
     path: '/users',
     Component: lazy(() => import('../Pages/LazyLoad/Users/UsersPage')),
     name: 'Usuarios',
+    desc: 'Encuentre todos los usuarios en este apartado',
     icon: (
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

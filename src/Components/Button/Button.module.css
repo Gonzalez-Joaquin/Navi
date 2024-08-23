@@ -5,7 +5,7 @@
   cursor: pointer;
   border-radius: 8px;
   color: var(--color-white);
-  background: var(--color-terciario);
+  background: var(--color-secundario);
   gap: 8px;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
 }
 
 .unfilled:active {
-  color: var(--color-terciario);
+  color: var(--color-secundario);
 }
 
 .large {

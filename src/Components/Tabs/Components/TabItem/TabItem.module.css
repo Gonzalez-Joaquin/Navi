@@ -1,0 +1,45 @@
+.tab {
+  position: relative;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tab > span {
+  font: normal 500 16px/128% 'Poppins';
+  color: var(--color-hint-text);
+  padding-inline: 1rem;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  margin-inline: 0.75rem;
+  width: calc(100% - 1.5rem);
+  height: 3px;
+  border-radius: 20px;
+  background: var(--color-secundario);
+  display: block;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+}
+
+.tab:is(:hover, :focus)::before,
+.active::before {
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}

@@ -45,7 +45,7 @@
 }
 
 .arrowContainer > button:is(:hover, :active) svg path {
-  fill: var(--color-terciario);
+  fill: var(--color-secundario);
 }
 
 .withoutArrow {

@@ -1,0 +1,18 @@
+.tabs {
+  border-radius: 8px;
+  width: fit-content;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: var(--color-white);
+  box-shadow: 0px 10px 15px rgba(211, 192, 214, 0.07);
+}
+
+.tabs > li > span {
+  border-right: 2px solid var(--color-spacer);
+}
+
+.tabs > li:last-child > span {
+  border: 0;
+}
