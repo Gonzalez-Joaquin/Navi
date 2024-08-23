@@ -5,7 +5,7 @@
 }
 
 .user {
-  width: 53%;
+  width: 37%;
 }
 
 .user > div {
@@ -14,18 +14,41 @@
 }
 
 .type {
-  width: 17%;
+  width: 23%;
 }
 
 .access {
-  width: 15%;
+  width: 20%;
 }
 
 .status {
-  width: 15%;
+  width: 20%;
 }
 
 .status > div {
   display: flex;
   justify-content: flex-start;
+}
+
+@media (min-width: 1320px) {
+  .user {
+    width: 53%;
+  }
+
+  .user > div {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .type {
+    width: 17%;
+  }
+
+  .access {
+    width: 15%;
+  }
+
+  .status {
+    width: 15%;
+  }
 }

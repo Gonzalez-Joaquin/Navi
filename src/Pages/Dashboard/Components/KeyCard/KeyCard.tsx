@@ -12,8 +12,11 @@ interface Props {
 const KeyCard = ({ trend, icon, title, description, left = false, percentage = true }: Props) => {
   return (
     <div className={`${styles.card} ${left ? styles['row-reverse'] : ''}`}>
-      <div className={styles['icon-container']}>
-        <img src={icon} alt={`${title} - svg`} />
+      <div className={styles.container}>
+        <div className={styles['icon-container']}>
+          <img src={icon} alt={`${title} - svg`} />
+        </div>
+        <div>{description && <p className={styles.description}>{description}</p>}</div>
       </div>
       <div className={styles.content}>
         {trend && (
@@ -23,7 +26,6 @@ const KeyCard = ({ trend, icon, title, description, left = false, percentage = t
               : `${trend}${percentage ? '%' : ''}`}
           </span>
         )}
-        <div>{description && <p className={styles.description}>{description}</p>}</div>
       </div>
     </div>
   )
