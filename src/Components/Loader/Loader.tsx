@@ -5,7 +5,11 @@ interface Props {
 }
 
 const Loader = ({ color = 'light' }: Props) => {
-  return <div className={`${styles.loader} ${styles[color]}`}></div>
+  return (
+    <div className={styles.container}>
+      <div className={`${styles.loader} ${styles[color]}`}></div>
+    </div>
+  )
 }
 
 export default Loader

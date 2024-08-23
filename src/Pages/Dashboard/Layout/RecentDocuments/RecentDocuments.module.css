@@ -1,5 +1,7 @@
 .table {
+  margin-top: 1rem;
   min-height: unset;
+  padding-bottom: 1rem;
 }
 
 .user {

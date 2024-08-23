@@ -40,13 +40,6 @@ const RecentDocuments = () => {
       documentType: 'Plano técnico',
       documentStatus: 'processing',
     },
-    {
-      id: '4',
-      user: 'Joaquin Gonzalez',
-      accessDate: 'Jul 21, 2024',
-      documentType: 'Expediente',
-      documentStatus: 'warning',
-    },
   ]
 
   const allIds = useMemo(() => {

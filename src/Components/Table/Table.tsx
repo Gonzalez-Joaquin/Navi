@@ -13,12 +13,12 @@ interface TableCardHandlers {
 
 interface TableProps {
   page: string | Array<string>
-  title?: string
-  label?: string
   allIds: Array<string>
   selectedIds: Set<string>
   children: (args: TableCardHandlers) => React.ReactNode
   setSelectedIds: React.Dispatch<React.SetStateAction<Set<string>>>
+  title?: string
+  label?: string
   total?: number
   className?: string
   haveHeader?: boolean

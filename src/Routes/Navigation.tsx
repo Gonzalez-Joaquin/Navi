@@ -6,29 +6,28 @@ import { routes } from './routes'
 
 const Navigation = () => {
   return (
-    <Suspense fallback={<Loader />}>
-      <BrowserRouter>
-        <Nav />
-        <div className="main-layout">
-          <Routes>
-            {routes.map(({ path, Component }) => (
-              <Route
-                key={path}
-                path={path}
-                element={
-                  <>
-                    {path !== '/login' && <Header title="Dashboard" />}
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        {routes.map(({ path, Component }) => (
+          <Route
+            key={path}
+            path={path}
+            element={
+              <div className={'page'}>
+                {path !== '/login' && <Header title="Dashboard" />}
+                <main className="main-layout">
+                  <Suspense fallback={<Loader />}>
                     <Component />
-                  </>
-                }
-              />
-            ))}
-
-            <Route path="/*" element={<Navigate to={routes[0].path} replace />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </Suspense>
+                  </Suspense>
+                </main>
+              </div>
+            }
+          />
+        ))}
+        <Route path="/*" element={<Navigate to={routes[0].path} replace />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
