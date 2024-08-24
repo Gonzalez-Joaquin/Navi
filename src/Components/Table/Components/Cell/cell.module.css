@@ -1,11 +1,11 @@
 .cell {
   position: relative;
   text-align: center;
-  color: #363852;
 }
 
 .cellContainer {
-  font: normal 400 14px/19px Roboto;
+  font: normal 400 14px/19px 'Poppins';
+  color: var(--color-hint-text);
   padding-inline: 1rem;
   overflow-x: hidden;
   white-space: nowrap;
@@ -31,25 +31,24 @@
   visibility: hidden;
   opacity: 0;
   z-index: 10;
-  color: #fff;
-  padding: 5px 10px;
+  color: var(--color-hint-text);
+  padding: 8px 16px;
   border-radius: 5px;
-  font: normal 500 12px/13px Roboto;
-  background: var(--Color-200, #5f6388);
-  box-shadow: 0px 42.109px 27.857px 0px rgba(41, 72, 152, 0.03), 0px 21.864px 14.212px 0px rgba(41, 72, 152, 0.03),
-    0px 8.908px 7.126px 0px rgba(41, 72, 152, 0.02), 0px 2.024px 3.442px 0px rgba(41, 72, 152, 0.01);
+  font: normal 500 12px/13px 'Poppins';
+  background: var(--color-white);
+  filter: drop-shadow(-2px 2px 10px rgba(112, 112, 117, 0.3));
   transition: ease 0.3s;
 }
 
 .tooltip::before {
-  content: "";
+  content: '';
   position: absolute;
-  bottom: -8px;
+  bottom: -19px;
   left: 50%;
   transform: translateX(-50%);
-  border-width: 5px;
+  border-width: 10px;
   border-style: solid;
-  border-color: #5f6388 transparent transparent transparent;
+  border-color: var(--color-white) transparent transparent transparent;
 }
 
 .cell:hover .tooltip {

@@ -7,7 +7,7 @@
 }
 
 .head > tr > td {
-  font: normal 600 16px/19px 'Poppins';
-  color: var(--color-hint-text);
+  font: normal 700 21px/140% 'Poppins';
+  color: var(--color-border);
   text-transform: capitalize;
 }

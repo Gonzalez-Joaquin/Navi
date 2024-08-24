@@ -2,15 +2,15 @@ import { TabItem } from './Components'
 import styles from './Tabs.module.css'
 
 interface Props {
-  tabs: Array<{ label: string; key: string }>
+  tabs: Array<{ id: string; label: string }>
   active?: string
 }
 
 const Tabs = ({ tabs, active }: Props) => {
   return (
     <ul className={styles.tabs}>
-      {tabs.map(({ key, label }, idx) => (
-        <TabItem key={idx} active={key === active} label={label} />
+      {tabs.map(({ id, label }, idx) => (
+        <TabItem key={idx} active={id === active} label={label} />
       ))}
     </ul>
   )

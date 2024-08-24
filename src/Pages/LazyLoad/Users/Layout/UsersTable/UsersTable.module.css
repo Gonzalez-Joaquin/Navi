@@ -1,0 +1,23 @@
+.user {
+  width: 55%;
+}
+
+.user > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.role {
+  width: 15%;
+}
+
+.role > div {
+  display: grid;
+  place-items: center;
+}
+
+.last,
+.creation {
+  width: 15%;
+  text-transform: capitalize;
+}

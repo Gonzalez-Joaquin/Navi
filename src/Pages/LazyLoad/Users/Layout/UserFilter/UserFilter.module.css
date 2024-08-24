@@ -1,0 +1,36 @@
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input ~ div > svg > path {
+  fill: var(--color-border);
+}
+
+.button {
+  position: relative;
+  top: 2px;
+  width: 32px;
+  height: 32px;
+  background: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  background: var(--color-secundario);
+  cursor: pointer;
+}
+
+.button > svg > path {
+  fill: var(--color-white);
+}

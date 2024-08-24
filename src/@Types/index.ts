@@ -1,6 +1,7 @@
 interface UserRoleDTO {
   id: string
   label: string
+  color?: string
 }
 
 interface StatusDTO {
@@ -30,8 +31,8 @@ interface UserDTO {
   password: string
   securityCode: string
   role: string
-  lastAccess: Date
-  creationDate: Date
+  lastAccess: number
+  timestamp: number
   isActive: boolean
   pic?: string
 }
@@ -39,10 +40,10 @@ interface UserDTO {
 interface DocumentDTO {
   id: string
   title: string
-  creationDate: Date
+  creationDate: number
   status: StatusDTO
   viewedBy: Array<string>
-  lastAccessed: Date
+  lastAccessed: number
   fileType: string
   googleDriveUrl: string
 }
@@ -54,7 +55,7 @@ interface ExpedienteDTO {
   createdBy: string
   assignedTo: Array<string>
   status: StatusDTO
-  lastAccessed: Date
+  lastAccessed: number
   googleDriveFolderUrl: string
   category: string
 }
@@ -64,10 +65,17 @@ interface AlertDTO {
   title: string
   description: string
   relatedDocuments: Array<string>
-  dueDate: Date
+  dueDate: number
   createdBy: string
   alertType: string
   isResolved: boolean
+}
+
+interface EntityDTO {
+  id: string
+  name: string
+  timestamp: number
+  members: Array<string>
 }
 
 export type {
@@ -80,4 +88,5 @@ export type {
   DocumentDTO,
   ExpedienteDTO,
   AlertDTO,
+  EntityDTO,
 }

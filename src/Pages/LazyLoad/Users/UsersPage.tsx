@@ -1,33 +1,19 @@
+import { useEffect, useState } from 'react'
+
+import { useAppSelector } from '../../../Hooks/useRedux'
+import { UserFilter, UsersTable } from './Layout'
 import { Tabs } from '../../../Components'
-import { UserCount } from './Layout'
-import UsersTable from './Layout/UsersTable/UsersTable'
+
 import styles from './UsersPage.module.css'
 
 const UsersPage = () => {
+  const { userRoles } = useAppSelector(state => state.metaData)
+  const { list } = useAppSelector(state => state.users)
+
   return (
     <section className={styles.section}>
-      <Tabs
-        tabs={[
-          {
-            label: 'Administrador',
-            key: 'admin',
-          },
-          {
-            label: 'Armador',
-            key: 'shipowner',
-          },
-          {
-            label: 'Propietario',
-            key: 'owner',
-          },
-          {
-            label: 'General',
-            key: 'general',
-          },
-        ]}
-      />
-
-      <UsersTable />
+      <UserFilter role={userRoles} />
+      <UsersTable users={list.slice(0, 9)} role={userRoles} />
     </section>
   )
 }
