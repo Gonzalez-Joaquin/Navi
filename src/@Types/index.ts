@@ -7,6 +7,7 @@ interface UserRoleDTO {
 interface StatusDTO {
   id: string
   label: string
+  color?: string
 }
 
 interface AlertTypeDTO {
@@ -41,7 +42,7 @@ interface DocumentDTO {
   id: string
   title: string
   creationDate: number
-  status: StatusDTO
+  status: string
   viewedBy: Array<string>
   lastAccessed: number
   fileType: string
@@ -76,6 +77,7 @@ interface EntityDTO {
   name: string
   timestamp: number
   members: Array<string>
+  expedientIds?: Array<string>
 }
 
 export type {

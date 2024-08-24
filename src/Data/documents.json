@@ -1,0 +1,272 @@
+[
+  {
+    "id": "3b7e2234-64f3-4b4d-934c-ef0e57b4e7b8",
+    "title": "Manual de Usuario - Embarcación El Viajero",
+    "creationDate": 1708254000000,
+    "status": "activo",
+    "viewedBy": ["3", "11", "15"],
+    "lastAccessed": 1728814800000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j/view"
+  },
+  {
+    "id": "6c51f8e5-efb7-4e8b-bdb5-0a839db8d5f6",
+    "title": "Informe de Mantenimiento - Embarcación Aurora",
+    "creationDate": 1714914000000,
+    "status": "pendiente",
+    "viewedBy": ["5", "13", "17", "25"],
+    "lastAccessed": 1728907200000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/2a3b4c5d6e7f8g9h0i1j/view"
+  },
+  {
+    "id": "8f8b51c9-9e4b-4e3d-b2c5-44a7a2b08e48",
+    "title": "Planos de Construcción - Empresa Naval A",
+    "creationDate": 1719846000000,
+    "status": "activo",
+    "viewedBy": ["1", "5", "9", "21"],
+    "lastAccessed": 1728826800000,
+    "fileType": "DWG",
+    "googleDriveUrl": "https://drive.google.com/file/d/3a4b5c6d7e8f9g0h1i2j/view"
+  },
+  {
+    "id": "3a2f5e1c-c1c6-4e47-bca2-2a4f3a8a8c1e",
+    "title": "Informe de Inspección - Grupo de Propietarios",
+    "creationDate": 1718875800000,
+    "status": "archivado",
+    "viewedBy": ["1", "2", "14", "18", "22"],
+    "lastAccessed": 1728775000000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/4a5b6c7d8e9f0g1h2i3j/view"
+  },
+  {
+    "id": "1e8c8d3a-09a2-4c1d-83d3-62c8e4f5e7e8",
+    "title": "Certificado de Mantenimiento - Grupo de Armadores",
+    "creationDate": 1696932000000,
+    "status": "activo",
+    "viewedBy": ["3", "7", "11", "15", "19", "23"],
+    "lastAccessed": 1728827400000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/5a6b7c8d9e0f1g2h3i4j/view"
+  },
+  {
+    "id": "8c8d9b1a-4e9a-4b0b-898e-8c3f4a2b8d9e",
+    "title": "Manual Técnico - Grupo de Armadores - Embarcación La Estrella",
+    "creationDate": 1711353000000,
+    "status": "activo",
+    "viewedBy": ["7", "19", "23"],
+    "lastAccessed": 1728705600000,
+    "fileType": "TXT",
+    "googleDriveUrl": "https://drive.google.com/file/d/6a7b8c9d0e1f2g3h4i5j/view"
+  },
+  {
+    "id": "7a8c1e2d-8f8b-4c5e-8a3f-3e4b5d6a8c9d",
+    "title": "Expediente de Seguridad - Empresa Naval B",
+    "creationDate": 1713603600000,
+    "status": "activo",
+    "viewedBy": ["4", "8", "16", "20", "24"],
+    "lastAccessed": 1728740600000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/7a8b9c0d1e2f3g4h5i6j/view"
+  },
+  {
+    "id": "9d3b6c8e-1b4f-4a5e-9f6a-7c8d9e0f1b2c",
+    "title": "Plan de Mantenimiento - Grupo de Propietarios de Embarcaciones Privadas",
+    "creationDate": 1694534400000,
+    "status": "activo",
+    "viewedBy": ["2", "14", "18"],
+    "lastAccessed": 1728823800000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/8a9b0c1d2e3f4g5h6i7j/view"
+  },
+  {
+    "id": "6e8f5c7d-3b8e-4a1b-9d2c-4f5e6b7a8d9e",
+    "title": "Reporte de Inspección - Grupo de Armadores - Embarcación La Estrella",
+    "creationDate": 1711353000000,
+    "status": "pendiente",
+    "viewedBy": ["7", "19", "23"],
+    "lastAccessed": 1728714200000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/9a0b1c2d3e4f5g6h7i8j/view"
+  },
+  {
+    "id": "2b3c6d8e-4f5b-4a8c-9e1a-7c8d9e0f1b2c",
+    "title": "Certificado de Mantenimiento - Embarcación Aurora",
+    "creationDate": 1714914000000,
+    "status": "archivado",
+    "viewedBy": ["5", "13", "17", "25"],
+    "lastAccessed": 1728856200000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/10a1b2c3d4e5f6g7h8i9j/view"
+  },
+  {
+    "id": "3d8f9b0e-1c4d-4a6b-9e7c-8a9b0c1d2e3f",
+    "title": "Expediente de Proyecto - Empresa de Planos y Documentos Navales C",
+    "creationDate": 1699617600000,
+    "status": "activo",
+    "viewedBy": ["1", "3", "9", "13", "25"],
+    "lastAccessed": 1728875400000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/11a2b3c4d5e6f7g8h9i0j/view"
+  },
+  {
+    "id": "7a8b9c0d-1e4f-4a8c-9f6a-7c8d9e0f1b2c",
+    "title": "Certificado de Inspección - Grupo de Mantenimiento de Embarcaciones Comerciales",
+    "creationDate": 1705305600000,
+    "status": "pendiente",
+    "viewedBy": ["5", "13", "17"],
+    "lastAccessed": 1728783600000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/12a3b4c5d6e7f8g9h0i1j/view"
+  },
+  {
+    "id": "8f8e9b1a-4c5d-4e7a-9b8c-7d8e9f0g1h2i",
+    "title": "Reporte de Planificación - Grupo de Propietarios",
+    "creationDate": 1718875800000,
+    "status": "activo",
+    "viewedBy": ["1", "2", "14", "18", "22"],
+    "lastAccessed": 1728840600000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/13a4b5c6d7e8f9g0h1i2j/view"
+  },
+  {
+    "id": "4b2c5d6e-7f8a-4c9d-8e0f-1a2b3c4d5e6f",
+    "title": "Guía de Instalación - Embarcación El Navegante",
+    "creationDate": 1717928400000,
+    "status": "activo",
+    "viewedBy": ["2", "8", "16", "24"],
+    "lastAccessed": 1728830400000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/14a5b6c7d8e9f0g1h2i3j/view"
+  },
+  {
+    "id": "5d8f7e6c-3b2a-4c9d-8e0f-1a2b3c4d5e6f",
+    "title": "Certificado de Seguridad - Embarcación Centauro",
+    "creationDate": 1696911600000,
+    "status": "archivado",
+    "viewedBy": ["1", "4", "11"],
+    "lastAccessed": 1728778200000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/15a6b7c8d9e0f1g2h3i4j/view"
+  },
+  {
+    "id": "2e8f9c0b-4d1e-4a8c-9e7a-8b9c0d1e2f3f",
+    "title": "Planos de Diseño - Grupo de Embarcaciones Comerciales",
+    "creationDate": 1709046000000,
+    "status": "activo",
+    "viewedBy": ["3", "5", "13"],
+    "lastAccessed": 1728706800000,
+    "fileType": "DWG",
+    "googleDriveUrl": "https://drive.google.com/file/d/16a7b8c9d0e1f2g3h4i5j/view"
+  },
+  {
+    "id": "6d8f9c0b-4e5a-4f6b-8c9d-0a1b2c3d4e5f",
+    "title": "Informe de Evaluación - Embarcación Rápida",
+    "creationDate": 1712253000000,
+    "status": "pendiente",
+    "viewedBy": ["5", "9", "21", "25"],
+    "lastAccessed": 1728873000000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/17a8b9c0d1e2f3g4h5i6j/view"
+  },
+  {
+    "id": "8e9d4c6f-2b3a-4d8e-9c0f-7a1b2c3d4e5f",
+    "title": "Manual de Operación - Embarcación La Tempestad",
+    "creationDate": 1703182800000,
+    "status": "activo",
+    "viewedBy": ["1", "8", "15", "23"],
+    "lastAccessed": 1728721800000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/18a9b0c1d2e3f4g5h6i7j/view"
+  },
+  {
+    "id": "9f0e8c1b-2d4a-4b9c-8e7d-3a4b5c6d7e8f",
+    "title": "Certificado de Inspección - Embarcación Albatros",
+    "creationDate": 1713842400000,
+    "status": "activo",
+    "viewedBy": ["2", "7", "14", "19"],
+    "lastAccessed": 1728834800000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/19a0b1c2d3e4f5g6h7i8j/view"
+  },
+  {
+    "id": "3a5b6c7d-8f9a-4d1b-9e0f-2a3b4c5d6e7f",
+    "title": "Reporte de Incidentes - Grupo de Mantenimiento de Embarcaciones",
+    "creationDate": 1719396000000,
+    "status": "pendiente",
+    "viewedBy": ["5", "11", "16"],
+    "lastAccessed": 1728876600000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/20a1b2c3d4e5f6g7h8i9j/view"
+  },
+  {
+    "id": "4b5c6d7e-8f9a-4c1b-9e2d-0a1b2c3d4e5f",
+    "title": "Plan de Mantenimiento - Embarcación Poseidón",
+    "creationDate": 1699468800000,
+    "status": "activo",
+    "viewedBy": ["3", "8", "17", "24"],
+    "lastAccessed": 1728830600000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/21a2b3c4d5e6f7g8h9i0j/view"
+  },
+  {
+    "id": "5c6d7e8f-9a0b-4c1d-9e2f-0a1b2c3d4e5f",
+    "title": "Guía de Mantenimiento - Embarcación La Perla",
+    "creationDate": 1714425600000,
+    "status": "activo",
+    "viewedBy": ["2", "5", "13", "22"],
+    "lastAccessed": 1728827400000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/22a3b4c5d6e7f8g9h0i1j/view"
+  },
+  {
+    "id": "6e7f8c9d-0a1b-4c2d-8e9f-3a4b5c6d7e8f",
+    "title": "Certificado de Seguridad - Grupo de Propietarios",
+    "creationDate": 1709542800000,
+    "status": "archivado",
+    "viewedBy": ["1", "7", "19"],
+    "lastAccessed": 1728854400000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/23a4b5c6d7e8f9g0h1i2j/view"
+  },
+  {
+    "id": "7a8b9c0d-1e4f-4a8c-9f6a-8b9c0d1e2f3f",
+    "title": "Informe Técnico - Embarcación La Galera",
+    "creationDate": 1718875800000,
+    "status": "activo",
+    "viewedBy": ["2", "6", "15"],
+    "lastAccessed": 1728781200000,
+    "fileType": "XLS",
+    "googleDriveUrl": "https://drive.google.com/file/d/24a5b6c7d8e9f0g1h2i3j/view"
+  },
+  {
+    "id": "8f9d0e1b-2a4c-4d8e-9f7a-3b0c1d2e3f4f",
+    "title": "Plan de Inspección - Grupo de Armadores",
+    "creationDate": 1712253000000,
+    "status": "activo",
+    "viewedBy": ["3", "9", "18"],
+    "lastAccessed": 1728742400000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/25a6b7c8d9e0f1g2h3i4j/view"
+  },
+  {
+    "id": "9e0f1b2c-3a4d-4b8e-9f7a-8c9d0e1b2a3f",
+    "title": "Certificado de Mantenimiento - Embarcación La Luna",
+    "creationDate": 1711938000000,
+    "status": "activo",
+    "viewedBy": ["4", "12", "23"],
+    "lastAccessed": 1728870000000,
+    "fileType": "DOC",
+    "googleDriveUrl": "https://drive.google.com/file/d/26a7b8c9d0e1f2g3h4i5j/view"
+  },
+  {
+    "id": "0f1b2c3d-4e5a-4c6b-8d9e-0a1b2c3d4e5f",
+    "title": "Manual de Usuario - Embarcación La Estrella",
+    "creationDate": 1698790800000,
+    "status": "activo",
+    "viewedBy": ["5", "8", "14"],
+    "lastAccessed": 1728746000000,
+    "fileType": "PDF",
+    "googleDriveUrl": "https://drive.google.com/file/d/27a8b9c0d1e2f3g4h5i6j/view"
+  }
+]
