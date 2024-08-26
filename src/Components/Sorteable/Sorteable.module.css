@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: normal 500 13px/128% 'Poppins';
+  color: var(--color-hint-text);
+}
+
+.sorteable {
+  background: var(--color-white);
+  outline: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 12px;
+  padding-block: 8px;
+  padding-inline: 14px 18px;
+}
+
+.span {
+  font: normal 600 12px/120% 'Poppins';
+  color: var(--color-secundario);
+}
+
+.sorteable > svg > path {
+  fill: var(--color-secundario);
+}
+
+.sorteable.active > svg > path {
+  rotate: 180deg;
+}

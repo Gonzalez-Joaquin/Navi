@@ -1,0 +1,33 @@
+.entity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.entity-container > span {
+  font: normal 600 16px/138% 'Poppins';
+  color: var(--color-hint-text);
+}
+
+.entity-container > p {
+  font: normal 500 13px/130% 'Poppins';
+  text-transform: capitalize;
+  color: var(--color-border);
+}
+
+.members-list > div {
+  display: flex;
+  justify-content: start;
+}
+
+.entity {
+  width: 50%;
+}
+
+.members-list {
+  width: 30%;
+}
+
+.expedientes {
+  width: 20%;
+}

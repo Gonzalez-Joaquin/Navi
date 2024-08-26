@@ -39,12 +39,25 @@ const UsersTable = ({ users, role }: Props) => {
       allIds={allIds}
       selectedIds={selectedIds}
       setSelectedIds={setSelectedIds}>
-      {({}) => (
+      {({ toggleSelect, toggleSelectAll, allAreSelected, isSelected }) => (
         <>
-          <TableHead {...UsersTableColumns} />
+          <TableHead
+            {...UsersTableColumns}
+            withCheckboxes={{
+              id: 'all-user-check',
+              value: allAreSelected,
+              onChange: toggleSelectAll,
+            }}
+          />
           <Body>
             {usersList?.map(({ id, name, role, email, lastAccess, timestamp, pic }) => (
-              <Row key={id} withArrow>
+              <Row
+                key={id}
+                withArrow
+                withCheckboxes
+                id={`user-table-${id}`}
+                onChange={() => toggleSelect(id)}
+                value={isSelected(id)}>
                 <Cell className={styles.user}>
                   <User size="medium + info" name={name} image={pic} info={email} />
                 </Cell>

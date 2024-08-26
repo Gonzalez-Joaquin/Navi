@@ -12,10 +12,6 @@
   gap: 1rem;
 }
 
-.input ~ div > svg > path {
-  fill: var(--color-border);
-}
-
 .button {
   position: relative;
   top: 2px;

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import useTable from './Hook/useTable'
 import style from './table.module.css'
 import { Empty } from '..'
@@ -46,6 +47,20 @@ const Table = (props: TableProps) => {
     setSelectedIds
   )
 
+  const [displayedCount, setDisplayedCount] = useState(0)
+
+  useEffect(() => {
+    if (displayedCount === selectedCount) return
+
+    const step = selectedCount > displayedCount ? 1 : -1
+
+    const timeout = setTimeout(() => {
+      setDisplayedCount(prevCount => prevCount + step)
+    }, 75)
+
+    return () => clearTimeout(timeout)
+  }, [selectedCount, displayedCount])
+
   const handlers: TableCardHandlers = {
     totalCount,
     isSelected,
@@ -63,7 +78,7 @@ const Table = (props: TableProps) => {
           <div className={`${style.selectedContainer} ${selectedCount !== 0 ? style.reveal : ''}`}>
             <p>{label}</p>
             <div className={`${style.counter} ${animate ? style.animate : ''}`}>
-              <span>{selectedCount}</span>
+              <span>{displayedCount}</span>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import styles from "./tableCheckbox.module.css"
+import styles from './tableCheckbox.module.css'
 
 interface Props {
   id: string
@@ -8,12 +8,12 @@ interface Props {
 
 const TableCheckbox = ({ value, onChange, id }: Props) => {
   return (
-    <div className={styles["checkbox-wrapper-65"]}>
-      <label htmlFor={id} onClick={(e) => e.stopPropagation()}>
+    <div className={styles['checkbox-wrapper-65']}>
+      <label htmlFor={id} onClick={e => e.stopPropagation()}>
         <input
           type="checkbox"
           checked={value}
-          onChange={(e) => {
+          onChange={e => {
             e.stopPropagation()
             onChange(!value)
           }}

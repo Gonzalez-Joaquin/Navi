@@ -6,7 +6,6 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  padding-inline: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -20,6 +19,7 @@
 
 .content {
   width: 100%;
+  padding-inline: 2rem;
   padding-block: 2.3rem 1.5rem;
   min-height: 3rem;
   display: flex;
@@ -57,14 +57,14 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: var(--color-secundario);
-  border: 1px solid var(--color-primario);
+  background: var(--color-bg-light-grey);
+  border: 1px solid var(--color-terciario);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .counter > span {
-  color: var(--color-hint-text);
-  font: normal 400 10px/19px Roboto;
+  color: var(--color-primario);
+  font: normal 400 10px/19px 'Poppins';
   text-align: center;
 }
 

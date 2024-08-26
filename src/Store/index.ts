@@ -3,6 +3,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import expedienteReducer from './Reducers/Expediente.reducer'
 import documentReducer from './Reducers/Document.reducer'
 import MetaDataReducer from './Reducers/MetaData.reducer'
+import EntityReducer from './Reducers/Entity.reducer'
 import alertReducer from './Reducers/Alert.reducer'
 import userReducer from './Reducers/User.reducer'
 
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
   documents: documentReducer,
   alerts: alertReducer,
   metaData: MetaDataReducer,
+  entities: EntityReducer,
 })
 
 const store = configureStore({

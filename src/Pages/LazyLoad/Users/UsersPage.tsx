@@ -1,8 +1,5 @@
-import { useEffect, useState } from 'react'
-
 import { useAppSelector } from '../../../Hooks/useRedux'
 import { UserFilter, UsersTable } from './Layout'
-import { Tabs } from '../../../Components'
 
 import styles from './UsersPage.module.css'
 
