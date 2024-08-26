@@ -1,7 +1,7 @@
 import { KeyCard } from '../../Components'
 import styles from './KeyStatistics.module.css'
 
-import docIcon from '../../../../Assets/Svg/Icon/doc.svg'
+import docIcon from '../../../../Assets/Svg/Icon/doc-icon.svg'
 import warningIcon from '../../../../Assets/Svg/State/warning.svg'
 import succesIcon from '../../../../Assets/Svg/State/succes.svg'
 

@@ -30,8 +30,8 @@
 
 .nav-item > span {
   font: normal 500 16px/132% 'Poppins';
-  color: var(--color-hint-text);
-  transition: ease 0.3s;
+  color: #9ea3b0;
+  transition: color ease 0.3s;
 }
 
 .active > span {

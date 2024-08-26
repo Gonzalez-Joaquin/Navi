@@ -5,7 +5,7 @@
 }
 
 .article > h3 {
-  color: var(--color-hint-text);
+  color: var(--color-title);
 }
 
 .container {

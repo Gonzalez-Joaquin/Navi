@@ -19,7 +19,7 @@
 
 .title-container > h2 {
   font: normal 500 21px/140% 'Poppins';
-  color: var(--color-hint-text);
+  color: var(--color-title);
 }
 
 .title-container > p {

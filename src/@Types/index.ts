@@ -22,6 +22,7 @@ interface CategoryDTO {
 
 interface FileTypeDTO {
   id: string
+  type: string
   icon: string
 }
 

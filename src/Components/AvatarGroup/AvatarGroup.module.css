@@ -9,7 +9,6 @@
   width: 36px;
   height: 36px;
   background: var(--color-bg-light-grey);
-  border: 1px solid var(--color-border);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -22,7 +22,8 @@
   --color-purple: #9d3fe7;
   --color-gradient: linear-gradient(159.13deg, #9d3fe7 -24.13%, #602093 132.21%);
   --color-black: #1a141f;
-  --color-hint-text: #4b3a5a;
+  --color-title: #4b3a5a;
+  --color-hint-text: #546a7b;
   --color-border: #aba7af;
   --color-disabled: #d4d2d5;
   --color-spacer: #d9d1e0;
@@ -182,7 +183,8 @@ section {
     --color-purple: #9d3fe7;
     --color-gradient: linear-gradient(159.13deg, #9d3fe7 -24.13%, #602093 132.21%);
     --color-black: #1a141f;
-    --color-hint-text: #4b3a5a;
+    --color-title: #4b3a5a;
+    --color-hint-text: #546a7b;
     --color-border: #aba7af;
     --color-disabled: #d4d2d5;
     --color-spacer: #d9d1e0;

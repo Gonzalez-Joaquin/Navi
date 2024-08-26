@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
+import DocumentData from '../../Data/documents.json'
 import { DocumentDTO } from '../../@Types'
 
 interface DocumentState {
@@ -9,7 +10,7 @@ interface DocumentState {
 }
 
 const initialState: DocumentState = {
-  list: [],
+  list: DocumentData,
   loading: false,
 }
 

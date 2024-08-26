@@ -6,15 +6,16 @@
   height: 20px;
   border-radius: 4px;
   background-color: var(--color-white);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-spacer-light);
   transition: all 0.15s ease;
   z-index: 20;
+  box-shadow: 0px 10px 15px rgba(211, 192, 214, 0.07);
 }
 
 .checkbox-wrapper-65 .cbx svg {
   position: absolute;
   top: 4px;
-  left: 3px;
+  left: 3.33px;
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;

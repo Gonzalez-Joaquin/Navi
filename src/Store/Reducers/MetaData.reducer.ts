@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 import { UserRoleDTO, StatusDTO, AlertTypeDTO, CategoryDTO, FileTypeDTO } from '../../@Types'
-import filetypesData from '../../Data/filetypes.json'
+import FileTypeData from '../../Data/filetypes.data'
 interface MetaDataState {
   userRoles: Array<UserRoleDTO>
   statuses: Array<StatusDTO>
@@ -37,12 +37,12 @@ const initialState: MetaDataState = {
   statuses: [
     {
       id: '0',
-      label: 'pendiente',
+      label: 'Pendiente',
       color: 'ff9500',
     },
     {
       id: '1',
-      label: 'aprobado',
+      label: 'Aprobado',
       color: '0f0bab',
     },
     {
@@ -59,6 +59,10 @@ const initialState: MetaDataState = {
       id: '4',
       label: 'Completado',
       color: '00b998',
+    },
+    {
+      id: '5',
+      label: 'Archivado',
     },
   ],
   alertTypes: [
@@ -93,7 +97,7 @@ const initialState: MetaDataState = {
       name: 'Planos Técnicos',
     },
   ],
-  fileTypes: filetypesData,
+  fileTypes: FileTypeData,
   loading: false,
 }
 

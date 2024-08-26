@@ -64,7 +64,7 @@ export const routes: Array<Route> = [
   },
   {
     path: '/archivos',
-    Component: lazy(() => import('../Pages/LazyLoad/Documents/DocumentsPage')),
+    Component: lazy(() => import('../Pages/LazyLoad/Expedientes/ExpedientesPage')),
     name: 'Expedientes',
     icon: (
       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@ export const routes: Array<Route> = [
   },
   {
     path: '/alertas',
-    Component: lazy(() => import('../Pages/LazyLoad/Documents/DocumentsPage')),
+    Component: lazy(() => import('../Pages/LazyLoad/Alerts/AlertsPage')),
     name: 'Alertas',
     icon: (
       <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
