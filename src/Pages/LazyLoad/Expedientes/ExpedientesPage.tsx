@@ -15,8 +15,8 @@ const ExpedientesPage = () => {
   }, [entities])
 
   const allIds = useMemo(() => {
-    return list.map(item => item.id)
-  }, [list])
+    return expedientes.map(item => item.id)
+  }, [expedientes])
 
   return (
     <section className={styles.section}>

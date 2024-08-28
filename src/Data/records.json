@@ -1,0 +1,112 @@
+[
+  {
+    "id": "2d15f422-80b5-4a87-b4fd-96a078f84b13",
+    "title": "Certificado de Navegación 2024",
+    "associatedDocuments": ["3b7e2234-64f3-4b4d-934c-ef0e57b4e7b8", "6c51f8e5-efb7-4e8b-bdb5-0a839db8d5f6"],
+    "createdBy": "0",
+    "assignedTo": ["1", "2"],
+    "status": "1",
+    "lastAccessed": 1692556800,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/abc123",
+    "category": "1"
+  },
+  {
+    "id": "d8198814-0953-44fe-9ca0-33680d8bb25a",
+    "title": "Informe de Mantenimiento Anual",
+    "associatedDocuments": ["8f8b51c9-9e4b-4e3d-b2c5-44a7a2b08e48"],
+    "createdBy": "3",
+    "assignedTo": ["2"],
+    "status": "2",
+    "lastAccessed": 1692393600,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/xyz456",
+    "category": "2"
+  },
+  {
+    "id": "4c445fd1-2af7-48dd-b9d6-d28a45dccc42",
+    "title": "Planos del Barco ABC",
+    "associatedDocuments": ["3a2f5e1c-c1c6-4e47-bca2-2a4f3a8a8c1e", "1e8c8d3a-09a2-4c1d-83d3-62c8e4f5e7e8"],
+    "createdBy": "1",
+    "assignedTo": ["0", "1"],
+    "status": "0",
+    "lastAccessed": 1692211200,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/def789",
+    "category": "3"
+  },
+  {
+    "id": "8a72cca7-a782-4b10-9249-3cd3c78360f1",
+    "title": "Certificado de Seguridad 2024",
+    "associatedDocuments": ["8c8d9b1a-4e9a-4b0b-898e-8c3f4a2b8d9e"],
+    "createdBy": "2",
+    "assignedTo": ["3"],
+    "status": "3",
+    "lastAccessed": 1692038400,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/ghi012",
+    "category": "1"
+  },
+  {
+    "id": "419227c2-749c-4cf2-9050-d1c7e779b3c7",
+    "title": "Reporte de Inspección Anual",
+    "associatedDocuments": ["7a8c1e2d-8f8b-4c5e-8a3f-3e4b5d6a8c9d"],
+    "createdBy": "1",
+    "assignedTo": ["2", "4"],
+    "status": "4",
+    "lastAccessed": 1691865600,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/jkl345",
+    "category": "2"
+  },
+  {
+    "id": "6bd735ef-a876-4dfa-8cc3-6c3dfdf26914",
+    "title": "Planos Técnicos del Motor XYZ",
+    "associatedDocuments": ["9d3b6c8e-1b4f-4a5e-9f6a-7c8d9e0f1b2c", "6e8f5c7d-3b8e-4a1b-9d2c-4f5e6b7a8d9e"],
+    "createdBy": "0",
+    "assignedTo": ["1", "3"],
+    "status": "5",
+    "lastAccessed": 1691683200,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/mno678",
+    "category": "3"
+  },
+  {
+    "id": "730459ef-f76c-4769-89cc-8dac54f2ff0f",
+    "title": "Certificado de Mantenimiento Preventivo",
+    "associatedDocuments": ["2b3c6d8e-4f5b-4a8c-9e1a-7c8d9e0f1b2c"],
+    "createdBy": "2",
+    "assignedTo": ["3"],
+    "status": "2",
+    "lastAccessed": 1691500800,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/pqr901",
+    "category": "1"
+  },
+  {
+    "id": "f530f6c6-0b1d-4d8c-a1b8-888e738f11d4",
+    "title": "Planos de Mantenimiento de la Bomba de Agua",
+    "associatedDocuments": ["3b7e2234-64f3-4b4d-934c-ef0e57b4e7b8"],
+    "createdBy": "3",
+    "assignedTo": ["0", "2", "4"],
+    "status": "1",
+    "lastAccessed": 1691328000,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/stu234",
+    "category": "3"
+  },
+  {
+    "id": "c88d9474-10ce-4676-8835-3df16f50fa82",
+    "title": "Registro de Mantenimiento del Motor ABC",
+    "associatedDocuments": ["1e8c8d3a-09a2-4c1d-83d3-62c8e4f5e7e8"],
+    "createdBy": "1",
+    "assignedTo": ["2", "4"],
+    "status": "4",
+    "lastAccessed": 1691155200,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/vwx567",
+    "category": "2"
+  },
+  {
+    "id": "8d323d4b-02cf-4415-a003-ebd21b62034a",
+    "title": "Certificado de Emisiones 2024",
+    "associatedDocuments": ["8f8b51c9-9e4b-4e3d-b2c5-44a7a2b08e48"],
+    "createdBy": "0",
+    "assignedTo": ["1", "3"],
+    "status": "3",
+    "lastAccessed": 1690982400,
+    "googleDriveFolderUrl": "https://drive.google.com/folder/yza890",
+    "category": "1"
+  }
+]

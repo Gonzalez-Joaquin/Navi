@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 import { ExpedienteDTO } from '../../@Types'
+import records from '../../Data/records.json'
 
 interface ExpedienteState {
   list: Array<ExpedienteDTO>
@@ -9,7 +10,7 @@ interface ExpedienteState {
 }
 
 const initialState: ExpedienteState = {
-  list: [],
+  list: records,
   loading: false,
 }
 

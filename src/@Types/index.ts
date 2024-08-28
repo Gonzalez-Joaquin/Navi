@@ -56,7 +56,7 @@ interface ExpedienteDTO {
   associatedDocuments: Array<string>
   createdBy: string
   assignedTo: Array<string>
-  status: StatusDTO
+  status: string
   lastAccessed: number
   googleDriveFolderUrl: string
   category: string

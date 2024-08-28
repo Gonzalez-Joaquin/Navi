@@ -40,8 +40,7 @@ const DocumentsTable = ({ list, allIds, selectedIds, setSelectedIds, className }
       allIds={allIds}
       selectedIds={selectedIds}
       setSelectedIds={setSelectedIds}
-        className={className}
-      >
+      className={className}>
       {({ allAreSelected, toggleSelectAll, toggleSelect, isSelected }) => (
         <>
           <TableHead
