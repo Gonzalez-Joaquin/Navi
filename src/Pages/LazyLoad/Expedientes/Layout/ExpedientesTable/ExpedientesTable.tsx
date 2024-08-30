@@ -52,7 +52,12 @@ const ExpedientesTable = ({ list, allIds, selectedIds, setSelectedIds }: Props) 
           />
           <Body>
             {records.map(item => (
-              <Row key={item.id} withCheckboxes onChange={() => toggleSelect(item.id)} value={isSelected(item.id)}>
+              <Row
+                key={item.id}
+                withArrow
+                withCheckboxes
+                onChange={() => toggleSelect(item.id)}
+                value={isSelected(item.id)}>
                 <Cell className={styles['records-row']}>
                   <span>{item.title}</span>
                   <p>{item.createdBy?.name || '-'}</p>

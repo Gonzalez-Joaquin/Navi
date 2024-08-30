@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react'
 
+import { ExpedienteHeader, ExpedientesTable } from './Layout'
 import { useAppSelector } from '../../../Hooks/useRedux'
 import styles from './ExpedientesPage.module.css'
-import { ExpedientesTable } from './Layout'
 
 const ExpedientesPage = () => {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set<string>())
@@ -20,6 +20,7 @@ const ExpedientesPage = () => {
 
   return (
     <section className={styles.section}>
+      <ExpedienteHeader />
       <ExpedientesTable list={expedientes} allIds={allIds} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />
     </section>
   )
