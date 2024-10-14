@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-import { ExpedienteDTO } from '../../@Types'
+import { RecordsDTO } from '../../@Types'
 import records from '../../Data/records.json'
 
 interface ExpedienteState {
-  list: Array<ExpedienteDTO>
+  list: Array<RecordsDTO>
   loading: boolean
   error?: string
 }
@@ -18,7 +18,7 @@ const expedienteSlice = createSlice({
   name: 'expedientes',
   initialState,
   reducers: {
-    setExpedientes: (state, action: PayloadAction<Array<ExpedienteDTO>>) => {
+    setExpedientes: (state, action: PayloadAction<Array<RecordsDTO>>) => {
       state.list = action.payload
     },
     setLoading: (state, action: PayloadAction<boolean>) => {

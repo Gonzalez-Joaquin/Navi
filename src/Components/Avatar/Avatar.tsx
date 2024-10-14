@@ -3,7 +3,7 @@ import styles from './Avatar.module.css'
 interface Props {
   user?: {
     name: string
-    pic: string
+    pic?: string
   }
   size?: 'small' | 'medium' | 'large'
 }

@@ -1,24 +1,25 @@
+import { useNavigate } from 'react-router-dom'
 import { useMemo } from 'react'
 
 import { AvatarGroup, DocumentGroup, Table, Tag } from '../../../../../Components'
 import { Body, Cell, Row, TableHead } from '../../../../../Components/Table'
 import { getDate } from '../../../Users/Layout/UsersTable/Utilities'
 import { useAppSelector } from '../../../../../Hooks/useRedux'
-import { ExpedienteDTO } from '../../../../../@Types'
+import { RecordsDTO } from '../../../../../@Types'
 import styles from './ExpedientesTable.module.css'
 import RecordsTableColumns from './Constants'
-import { isElement } from 'react-dom/test-utils'
 
 interface Props {
-  list: Array<ExpedienteDTO>
+  list: Array<RecordsDTO>
   allIds: Array<string>
   selectedIds: Set<string>
   setSelectedIds: React.Dispatch<React.SetStateAction<Set<string>>>
 }
 
 const ExpedientesTable = ({ list, allIds, selectedIds, setSelectedIds }: Props) => {
-  const users = useAppSelector(state => state.users)
   const metaData = useAppSelector(state => state.metaData)
+  const users = useAppSelector(state => state.users)
+  const navigate = useNavigate()
 
   const records = useMemo(() => {
     return list.map(item => {
@@ -56,8 +57,9 @@ const ExpedientesTable = ({ list, allIds, selectedIds, setSelectedIds }: Props) 
                 key={item.id}
                 withArrow
                 withCheckboxes
+                value={isSelected(item.id)}
                 onChange={() => toggleSelect(item.id)}
-                value={isSelected(item.id)}>
+                onClickArrow={() => navigate(`/Archivos/${item.id}`, { replace: true })}>
                 <Cell className={styles['records-row']}>
                   <span>{item.title}</span>
                   <p>{item.createdBy?.name || '-'}</p>

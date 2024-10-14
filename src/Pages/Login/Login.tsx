@@ -30,7 +30,7 @@ const Login = () => {
     if (loading) {
       const timer = setTimeout(() => {
         navigate('/dashboard')
-      }, 3000)
+      }, 1000)
 
       return () => clearTimeout(timer)
     }

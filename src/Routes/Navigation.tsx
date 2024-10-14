@@ -9,7 +9,7 @@ const Navigation = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        {routes.map(({ path, Component, name, desc }) => (
+        {routes.map(({ path, Component, name, desc, children }) => (
           <Route
             key={path}
             path={path}
@@ -22,8 +22,24 @@ const Navigation = () => {
                   </Suspense>
                 </main>
               </div>
-            }
-          />
+            }>
+            {children?.map(({ path: childPath, Component: ChildComponent, name: childName, desc: childDesc }) => (
+              <Route
+                key={childPath}
+                path={childPath}
+                element={
+                  <div className={'sub-page'}>
+                    <Header title={childName || name} desc={childDesc || desc} />
+                    <main className="sub-page-layout">
+                      <Suspense fallback={<Loader />}>
+                        <ChildComponent />
+                      </Suspense>
+                    </main>
+                  </div>
+                }
+              />
+            ))}
+          </Route>
         ))}
         <Route path="/*" element={<Navigate to={routes[0].path} replace />} />
       </Routes>

@@ -1,3 +1,4 @@
+import { Outlet, useParams } from 'react-router-dom'
 import { useState, useMemo } from 'react'
 
 import { ExpedienteHeader, ExpedientesTable } from './Layout'
@@ -7,8 +8,9 @@ import styles from './ExpedientesPage.module.css'
 const ExpedientesPage = () => {
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set<string>())
   const { list } = useAppSelector(state => state.expedientes)
-
   const { entities } = useAppSelector(state => state.entities)
+
+  const { id } = useParams()
 
   const expedientes = useMemo(() => {
     return list.slice(0, 9)
@@ -18,7 +20,9 @@ const ExpedientesPage = () => {
     return expedientes.map(item => item.id)
   }, [expedientes])
 
-  return (
+  return id ? (
+    <Outlet />
+  ) : (
     <section className={styles.section}>
       <ExpedienteHeader />
       <ExpedientesTable list={expedientes} allIds={allIds} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />

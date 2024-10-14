@@ -1,0 +1,13 @@
+.section {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.empty {
+  align-items: center;
+  justify-content: center;
+}

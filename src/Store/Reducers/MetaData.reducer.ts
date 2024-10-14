@@ -5,7 +5,6 @@ import FileTypeData from '../../Data/filetypes.data'
 interface MetaDataState {
   userRoles: Array<UserRoleDTO>
   statuses: Array<StatusDTO>
-  alertTypes: Array<AlertTypeDTO>
   categories: Array<CategoryDTO>
   fileTypes: Array<FileTypeDTO>
   loading: boolean
@@ -18,20 +17,24 @@ const initialState: MetaDataState = {
       id: '0',
       label: 'Administrador',
       color: '034a73',
+      timestamp: Date.now(),
     },
     {
       id: '1',
       label: 'Armador',
       color: '00a1c8',
+      timestamp: Date.now(),
     },
     {
       id: '2',
       label: 'Propietario',
       color: '8b8fd9',
+      timestamp: Date.now(),
     },
     {
       id: '3',
       label: 'General',
+      timestamp: Date.now(),
     },
   ],
   statuses: [
@@ -39,62 +42,53 @@ const initialState: MetaDataState = {
       id: '0',
       label: 'Pendiente',
       color: 'ff9500',
+      timestamp: Date.now(),
     },
     {
       id: '1',
       label: 'Aprobado',
       color: '0f0bab',
+      timestamp: Date.now(),
     },
     {
       id: '2',
       label: 'En revisión',
       color: '00a1c8',
+      timestamp: Date.now(),
     },
     {
       id: '3',
       label: 'Vencido',
       color: 'd51a52',
+      timestamp: Date.now(),
     },
     {
       id: '4',
       label: 'Completado',
       color: '00b998',
+      timestamp: Date.now(),
     },
     {
       id: '5',
       label: 'Archivado',
-    },
-  ],
-  alertTypes: [
-    {
-      id: '1',
-      label: 'Notificación de Actualización de Documento',
-    },
-    {
-      id: '2',
-      label: 'Alerta de Vencimiento de Certificado',
-    },
-    {
-      id: '3',
-      label: 'Alerta de Mantenimiento Programado',
-    },
-    {
-      id: '4',
-      label: 'Alerta de Nueva Carpeta de Documentos',
+      timestamp: Date.now(),
     },
   ],
   categories: [
     {
       id: '1',
       name: 'Certificados',
+      timestamp: Date.now(),
     },
     {
       id: '2',
       name: 'Registros de Mantenimiento',
+      timestamp: Date.now(),
     },
     {
       id: '3',
       name: 'Planos Técnicos',
+      timestamp: Date.now(),
     },
   ],
   fileTypes: FileTypeData,
@@ -111,9 +105,6 @@ const metaDataSlice = createSlice({
     setStatuses: (state, action: PayloadAction<Array<StatusDTO>>) => {
       state.statuses = action.payload
     },
-    setAlertTypes: (state, action: PayloadAction<Array<AlertTypeDTO>>) => {
-      state.alertTypes = action.payload
-    },
     setCategories: (state, action: PayloadAction<Array<CategoryDTO>>) => {
       state.categories = action.payload
     },
@@ -129,7 +120,7 @@ const metaDataSlice = createSlice({
   },
 })
 
-export const { setUserRoles, setStatuses, setAlertTypes, setCategories, setFileTypes, setLoading, setError } =
+export const { setUserRoles, setStatuses, setCategories, setFileTypes, setLoading, setError } =
   metaDataSlice.actions
 
 export default metaDataSlice.reducer
